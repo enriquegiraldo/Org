@@ -12,6 +12,8 @@
     border-radius: 20px;
     padding: 8px 100px;
     flex:1;
+    min-width: 280px;/*Evita que el formulario sea demasiado estrecho*/
+    box-sizing: border-box;
 }
 
 .formulario h2{
@@ -19,3 +21,25 @@
     font-weight: 400;
     color: #212121;
 }
+
+/* Media query para pantallas pequeñas (344px o menos) */
+@media screen and (max-width: 344px) {
+    .formulario {
+        margin: 20px 10px; /* Reduce márgenes */
+        gap: 10px; /* Reduce el espacio entre formularios */
+        flex-direction: column; /* Apila los formularios verticalmente */
+    }
+
+    .formulario form {
+        padding: 8px 20px; /* Reduce el padding horizontal */
+        min-width: auto; /* Permite que el formulario ocupe el ancho disponible */
+        width: 100%; /* Asegura que no se desborde */
+    }
+
+    .formulario h2 {
+        font-size: 24px; /* Reduce el tamaño del título */
+    }
+}
+
+
+
