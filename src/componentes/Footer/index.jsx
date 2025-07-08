@@ -1,3 +1,4 @@
+// indexjsx/Footer
 import "./Footer.css";
 import { FaLinkedin, FaGithub, FaXTwitter } from "react-icons/fa6";
 
@@ -34,3 +35,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
