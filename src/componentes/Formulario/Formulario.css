@@ -21,7 +21,24 @@
     font-weight: 400;
     color: #212121;
 }
+/* Media query para pantallas pequeñas (360px o menos) */
+@media screen and (max-width: 560px) {
+    .formulario {
+        margin: 30px 20px; /* Reduce márgenes */
+        gap: 15px; /* Reduce el espacio entre formularios */
+        flex-direction: column; /* Apila los formularios verticalmente */
+    }
 
+    .formulario form {
+        padding: 8px 30px; /* Reduce el padding horizontal */
+        min-width: auto; /* Permite que el formulario ocupe el ancho disponible */
+        width: 100%; /* Asegura que no se desborde */
+    }
+
+    .formulario h2 {
+        font-size: 28px; /* Reduce el tamaño del título */
+    }
+}
 /* Media query para pantallas pequeñas (344px o menos) */
 @media screen and (max-width: 344px) {
     .formulario {
