@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem;
+    /* padding: 0 2rem 0 2rem; */
+
 }
 
 .title {
@@ -21,6 +22,8 @@
     transform-origin: top right;
     margin-top: 25px;
     margin-right: -25px;
+   
+
 }
 
 /* Media query para pantallas pequeñas (560px o menos) */
@@ -44,5 +47,17 @@
 
     .orgSection img {
         transform: scale(0.6);
+    }
+}
+
+/* Media query para pantallas muy pequeñas (280px o menos) */
+@media screen and (max-width: 280px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .orgSection img {
+        transform: scale(0.4);
+        margin-right: -10px;
     }
 }
